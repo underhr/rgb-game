@@ -56,10 +56,11 @@ function onLoad(){
 //calls the function to use when screen loads
 onLoad();
 
+//creates event to decide what happens when player clicks option buttons
 function handleColorClick(event) {
     let selectedColor = event.target.textContent;
 
-    //displays a message telling the player whether their guess is right or wrong
+    //displays a message telling the player whether their guess is right or wrong, and changes score
     if (selectedColor === winningColor) {
         score++;
         document.getElementById('score').textContent = "Score: " + score;
@@ -74,6 +75,7 @@ function handleColorClick(event) {
     }
 }
 
+//declares that when an option button is pressed, the handleColorClick function is used
 document.getElementById('option1').addEventListener("click", handleColorClick);
 document.getElementById('option2').addEventListener("click", handleColorClick);
 document.getElementById('option3').addEventListener("click", handleColorClick);
@@ -85,4 +87,5 @@ function newGame(){
     document.getElementById("score").textContent = "Score: " + score;
 }
 
+//calls on new game function when new game button is clicked
 document.getElementById("newGame").addEventListener("click", newGame);
