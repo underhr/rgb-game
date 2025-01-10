@@ -1,0 +1,40 @@
+body{
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+#container{
+    background-color:white;
+    padding:40px;
+    border-radius:100px;
+    box-shadow:0px 0px 40px white;
+}
+#colorBlock{
+    width:100px;
+    height:100px;
+    background-color:rgb(255,255,255);
+    margin:30px auto;
+}
+
+button{
+    width:100px;
+    height:30px;
+    margin:10px;
+    background-color:white;
+}
+
+#option1{
+    border: 2px solid red;
+}
+#option2{
+    border: 2px solid green;
+}
+#option3{
+    border: 2px solid blue;
+}
+
+#newGame{
+    border-color:black;
+}
