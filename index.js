@@ -19,6 +19,10 @@ function onLoad(){
 
     //changes the color of the block to the winning color
     document.getElementById("colorBlock").style.backgroundColor = winningColor;
+    
+    document.getElementById("container").style.borderColor = winningColor;
+
+    document.getElementById("newGame").style.borderColor = winningColor;
 
     let winningColorRGBA = winningColor.replace('rgb', 'rgba').replace(')', ', 0.2)');
 
@@ -65,20 +69,4 @@ document.getElementById('option1').addEventListener("click", handleColorClick);
 document.getElementById('option2').addEventListener("click", handleColorClick);
 document.getElementById('option3').addEventListener("click", handleColorClick);
 
-
-
-
-
 document.getElementById("newGame").addEventListener("click", onLoad);
-
-/*
-subjects researched:
-Math.random()
-.addEventLister
-if statements
-
-chat GPT:
-=== in if statements instead of =
-adding extra document.getElementById's for other buttons
-.replace
-*/
